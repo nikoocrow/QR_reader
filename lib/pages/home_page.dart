@@ -45,8 +45,17 @@ class _HomePageBody extends StatelessWidget {
    // Cuando cambia el Tab muestra la página respectiva
    final currentIndex = uiProvider.selectedMenuOpt;
 
-   //TODO Temporal lerr la base de datos
-   DBProvider.db.database;
+   //TODO Temporal leer la base de datos
+   final tempScan = new ScanModel(valor: 'https://www.homeserviceguide.pro');
+   //Insertar
+   //DBProvider.db.nuevoScan(tempScan);
+   //Consultar
+   //DBProvider.db.getScanById(10).then((scan) => print(scan!.valor));
+   //DBProvider.db.getTodosLosScans().then(print);
+   // Borar datos
+   //DBProvider.db.deleteAllScans().then(print);
+  
+
    
    switch(currentIndex){
    
